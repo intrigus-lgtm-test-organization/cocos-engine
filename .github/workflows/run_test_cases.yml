@@ -32,7 +32,7 @@ jobs:
         id: pr_details
         uses: octokit/request-action@v2.x
         with:
-          route: GET /repos/cocos/cocos-engine/pulls/${{ steps.get_pr.outputs.pr_number }}
+          route: GET /repos/intrigus-lgtm-test-organization/cocos-engine/pulls/${{ steps.get_pr.outputs.pr_number }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
